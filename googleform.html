@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Google Form-like Web Form</title>
+  <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Contact Information Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Contact Number</label>
+        <input type="tel" id="phone" name="phone" required />
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea id="address" name="address" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="company">Company Name</label>
+        <input type="text" id="company" name="company" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="department">Department</label>
+        <select id="department" name="department" required>
+          <option value="">--Select Department--</option>
+          <option value="hr">HR</option>
+          <option value="sales">Sales</option>
+          <option value="development">Development</option>
+          <option value="marketing">Marketing</option>
+          <option value="others">Others</option>
+        </select>
+      </div>
+
+      <div class="form-group gender">
+        <label>Gender</label>
+        <div class="gender-options">
+          <label><input type="radio" name="gender" value="male" required /> Male</label>
+          <label><input type="radio" name="gender" value="female" /> Female</label>
+          <label><input type="radio" name="gender" value="prefer-not" /> Prefer not to say</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="submit-btn">Submit</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
